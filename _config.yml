@@ -1,0 +1,92 @@
+# Site settings
+title: Marcus Pereira # site title
+description: >- # site description
+  Ama tecnologias, adora mergulhar, desenvolvedor e criador do 
+  <a href="https://negros.dev" target="_blank" rel="noopener">negros.dev</a>.
+lang: en-US # default lang
+timezone: America/Bahia # set your timezone
+image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
+repo: https://github.com/marcuxyz/blog # site repo [optional]
+mode: dark # default theme "dark" | "light"
+
+# Profile settings
+author:
+  name: Marcus Pereira
+  bio: >-
+    Ama tecnologias, adora mergulhar, desenvolvedor e criador do 
+    <a href="https://negros.dev" target="_blank" rel="noopener">negros.dev</a>.
+  username: marcuxyz 
+  github: marcuxyz # github username
+  twitter: marcuxyz # twitter username
+  facebook: false 
+  email: preto@marcuspereira.dev # email adress
+  avatar: /assets/img/marcuspereira.jpg # change with your own avatar
+
+# URL settings
+url: "https://marcuspereira.dev" #
+baseurl:
+permalink: /:title/
+google_analytics: # leave it blank if not wish
+fb_appid:
+
+# Collection setting
+collections:
+  posts:
+    output: true
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: post
+      comments: false
+
+# Jekyll Compose default front matter
+jekyll_compose:
+  post_default_front_matter:
+    modified:
+    tags: []
+    description:
+  draft_default_front_matter:
+    modified:
+    tags: []
+    description:
+
+# Homepage limit posts
+number_of_posts: 10
+
+# Build settings
+# theme: klise
+sass:
+  style: compressed
+
+include:
+  - _redirects
+  - .htaccess
+
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - CHANGELOG.md
+  - README.md
+  - node_modules
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - lighthouse.png
+  - klise-*.gem
+  - klise.gemspec
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-postfiles
