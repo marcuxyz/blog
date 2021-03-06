@@ -2,8 +2,8 @@
   url: /
   external: false
 
-- title: arquivados
-  url: /arquivados/
+- title: posts
+  url: /posts/
   external: false
 
 - title: sobre
