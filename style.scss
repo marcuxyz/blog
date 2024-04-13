@@ -18,14 +18,22 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
 
+#main {
+  flex: 1;
+}
+
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  // max-width: 1320px;
+  max-width: 960px;
   padding: 0 10px;
   width: 100%;
 }
